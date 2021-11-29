@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="js-css/style.css">
+	<title>Jadwal Kuliah</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="container-grid">
+			<div class="table">
+				<h2>semester 1</h2>
+				<table>
+					<tr class="header">
+						<th>HARI</th>
+						<th>JAM</th>
+						<th>KODE</th>
+						<th>MATA KULIAH/PRAKTIKUM</th>
+						<th>Dosen</th>
+						<th>KELAS/LAB</th>
+						<th>SKS</th>
+					</tr>
+					<tr class="even">
+						<td>Senin</td>
+						<td>07:30-10:30 WIB</td>
+						<td>211810811</td>
+						<td>Praktikum Dasar Pemrograman</td>
+						<td>Rusydi Umar, S.T., M.T., Ph.D</td>
+						<td>Lab Jaringan</td>
+						<td>1</td>
+					</tr>
+					<tr class="odd">
+						<td class="klear" rowspan="2">Selasa</td>
+						<td>07:00-08:40 WIB</td>
+						<td>211810331</td>
+						<td>Dasar Sistem Komputer</td>
+						<td>Taufiq Ismail, S.T., M.Cs. </td>
+						<td>G</td>
+						<td>3</td>
+					</tr>
+					<tr class="even">
+						<td>16:10-17:50 WIB</td>
+						<td>211810120</td>
+						<td>Al Quran dan Hadits</td>
+						<td>Drs., Nurrochid Hasan</td>
+						<td>G</td>
+						<td>2</td>
+					</tr>
+					<tr class="odd">
+						<td class="klear" rowspan="3">Rabu</td>
+						<td>07:00-09:35 WIB</td>
+						<td>211810630</td>
+						<td>Manajemen Data dan Informasi</td>
+						<td>Jefree Fahana, S.T., M.Kom</td>
+						<td>G</td>
+						<td>3</td>
+					</tr>
+					<tr class="even">
+						<td>09:35-12:10 WIB</td>
+						<td>211810230</td>
+						<td>Dasar Pemrograman</td>
+						<td>Bambang Robiin, S.T.,M.T.</td>
+						<td>G</td>
+						<td>3</td>
+					</tr>
+					<tr class="odd">
+						<td>13:30-15:00 WIB</td>
+						<td></td>
+						<td>Praktikum Logika Informatika</td>
+						<td>Fitri Indra Indikawati, S.Kom., M.Eng.</td>
+						<td>Lab Komputasi Dasar</td>
+						<td></td>
+					</tr>
+					<tr class="even">
+						<td rowspan="2">Kamis</td>
+						<td>07:00-08:40 WIB</td>
+						<td>211810720</td>
+						<td>Pancasila</td>
+						<td>Juwanti, M.Pd.</td>
+						<td>G</td>
+						<td>2</td>
+					</tr>
+					<tr class="odd">
+						<td>08:45-10:25 WIB</td>
+						<td>211810531</td>
+						<td>Logika Informatika</td>
+						<td>Dwi Normawati, S.T., M.Eng.</td>
+						<td>G</td>
+						<td>3</td>
+					</tr>
+					<tr class="even">
+						<td rowspan="2">Jumat</td>
+						<td>12:30-15:05 WIB</td>
+						<td>211810431</td>
+						<td>Kalkulus Informatika</td>
+						<td>Ahmad Azhari, S.Kom., M.Eng.</td>
+						<td>G</td>
+						<td>3</td>
+					</tr>
+					<tr class="odd">
+						<td>15:00-16:30 WIB</td>
+						<td></td>
+						<td>Praktikum Dasar Sistem Komputer</td>
+						<td>Ahmad Azhari, S.Kom., M.Eng.</td>
+						<td>Lab Komputasi Dasar</td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div class="time">
+				<div class="bungkus-2">
+					<div class="bungkus">
+						<div class="clock" timezone="+7">00:00:00</div>
+						<div class="timezone">WIB</div>
+					</div>
+					<div class="bungkus">
+						<div class="clock" timezone="+8">00:00:00</div>
+						<div class="timezone">WITA</div>
+					</div>
+					<div class="bungkus">
+						<div class="clock" timezone="+9">00:00:00</div>
+						<div class="timezone">WIT</div>
+					</div>
+				</div>
+				<div id="clock">
+					<input onchange="setAlarmTime(this.value)" name="alarmTime" type="datetime-local">
+					<div class="controls">
+						<button onclick="setAlarm()" class="button set-alarm">Set alarm</button>
+						<button onclick="clearAlarm()" class="button clear-alarm">Clear alarm</button>
+					</div>
+				</div>
+				<small>NOTE! : waktu untuk alarm adalah waktu lokal di komputer kalian</small>
+			</div>
+			<div class="current"></div>
+		</div>
+	</div>
+
+	<script src="js-css/script.js"></script>
+</body>
+
+</html>
