@@ -1,0 +1,129 @@
+:root {
+	--primary: rgb(0, 70, 117);
+	--primary-400: #498afb;
+	--primary-300: rgb(133, 206, 255);
+	--red: #ff3860;
+	--black: #000;
+	--background: #fff;
+}
+
+body {
+	background-color: var(--background);
+}
+
+h2 {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+small {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: var(--red);
+}
+
+table {
+	width: 100%;
+	border: 1px solid #000;
+	border-collapse: collapse;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	/* font-weight: 500; */
+	color: var(--black);
+}
+
+th,
+td {
+	height: 30px;
+	text-align: left;
+	vertical-align: center;
+	border: 1px solid #000;
+	border-spacing: 0;
+	padding: 0 5px;
+}
+
+.odd th,
+.odd td {
+	background: var(--primary-300);
+}
+
+.klear {
+	background: var(--background) !important;
+}
+
+.header {
+	background: var(--primary);
+	color: rgb(255, 255, 255);
+}
+
+.bungkus {
+	background-color: var(--primary);
+	display: flex;
+	padding: 5px 15px 15px 15px;
+	border-radius: 8px;
+	margin-bottom: 10px;
+}
+
+.bungkus-2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.clock {
+	font-size: 2em;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #fff;
+}
+
+.timezone {
+	font-size: 2em;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	padding-left: .2em;
+	color: #fff;
+}
+
+.controls {
+	margin-top: 5px;
+}
+
+.button {
+	cursor: pointer;
+	padding: 4px 8px;
+	border-radius: 5px;
+	margin-right: 4px;
+	border: none;
+	color: #fff;
+}
+
+.set-alarm {
+	background-color: var(--primary-400);
+}
+
+.clear-alarm {
+	background-color: var(--red);
+}
+
+@media (max-width: 575.98px) {
+	.row {
+		flex-direction: column-reverse;
+	}
+
+	.semester {
+		width: 100%;
+	}
+
+	.jam-waktu {
+		width: 100%;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.row {
+		flex-direction: column-reverse;
+	}
+
+	.semester {
+		width: 100%;
+	}
+
+	.jam-waktu {
+		width: 100%;
+	}
+}
