@@ -29,7 +29,8 @@ table {
 	color: var(--black);
 }
 
-th,td {
+th,
+td {
 	height: 30px;
 	text-align: left;
 	vertical-align: center;
@@ -38,7 +39,8 @@ th,td {
 	padding: 0 5px;
 }
 
-.odd th, .odd td {
+.odd th,
+.odd td {
 	background: var(--primary-300);
 }
 
@@ -96,4 +98,32 @@ th,td {
 
 .clear-alarm {
 	background-color: var(--red);
+}
+
+@media (max-width: 575.98px) {
+	.row {
+		flex-direction: column-reverse;
+	}
+
+	.semester {
+		width: 100%;
+	}
+
+	.jam-waktu {
+		width: 100%;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.row {
+		flex-direction: column-reverse;
+	}
+
+	.semester {
+		width: 100%;
+	}
+
+	.jam-waktu {
+		width: 100%;
+	}
 }
