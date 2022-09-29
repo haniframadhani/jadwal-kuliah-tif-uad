@@ -61,12 +61,17 @@ td {
 	margin-bottom: 10px;
 }
 
+.tanggal {
+	background-color: var(--red);
+}
+
 .bungkus-2 {
 	display: flex;
 	flex-direction: column;
 }
 
-.clock {
+.clock,
+.date {
 	font-size: 2em;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	color: #fff;
