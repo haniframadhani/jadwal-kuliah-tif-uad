@@ -44,6 +44,11 @@ tr:nth-child(odd) td:nth-last-child(-n+6) {
 	background: var(--primary-300);
 }
 
+.asisten td:nth-last-child(-n+6) {
+	background-color: var(--red) !important;
+	color: #fff;
+}
+
 .header {
 	background: var(--primary) !important;
 	color: rgb(255, 255, 255) !important;
