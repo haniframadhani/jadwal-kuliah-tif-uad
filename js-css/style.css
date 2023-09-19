@@ -1,8 +1,9 @@
 :root {
 	--primary: rgb(0, 70, 117);
 	--primary-400: #498afb;
-	--primary-300: rgb(133, 206, 255);
+	--primary-300: #85CEFF;
 	--red: #ff3860;
+	--red-light: #FF8585;
 	--black: #000;
 	--background: #fff;
 }
@@ -45,8 +46,8 @@ tr:nth-child(odd) td:nth-last-child(-n+6) {
 }
 
 .asisten td:nth-last-child(-n+6) {
-	background-color: var(--red) !important;
-	color: #fff;
+	background-color: var(--red-light) !important;
+	/* color: #fff; */
 }
 
 .header {
