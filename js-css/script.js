@@ -1,5 +1,7 @@
 const display = document.getElementById('clock');
 const kalender = document.querySelector('.date');
+const setAlarmButton = document.querySelector('.set-alarm');
+const clearAlarmButton = document.querySelector('.clear-alarm');
 const audio = new Audio('js-css/alarm/airraidsiren.mp3');
 audio.loop = true;
 let alarmTime = null;
@@ -85,7 +87,7 @@ function tanggalHariIni() {
 
 tanggalHariIni();
 
-setInterval(() => tanggalHariIni(), 60000);
+setInterval(() => tanggalHariIni(), 1000);
 
 function dateToText(date) {
 	var hours = date.getHours()
@@ -128,7 +130,7 @@ function setAlarmTime(value) {
 	alarmTime = value;
 }
 
-function setAlarm() {
+setAlarmButton.addEventListener('click', () => {
 	if (alarmTime) {
 		const current = new Date();
 		const timeToAlarm = new Date(alarmTime);
@@ -139,13 +141,14 @@ function setAlarm() {
 			alert('Alarm set');
 		}
 	}
-}
+});
 
-function clearAlarm() {
+clearAlarmButton.addEventListener('click', () => {
 	audio.pause();
 	if (alarmTimeout) {
 		clearTimeout(alarmTimeout);
 		alert('Alarm cleared');
 	}
-}
+})
+
 setTimeout(startClocks, 100);

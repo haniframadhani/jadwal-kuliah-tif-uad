@@ -3,7 +3,7 @@
 	--primary-400: #498afb;
 	--primary-300: #85CEFF;
 	--red: #ff3860;
-	--red-light: #FF8585;
+	--yellow: #FFE06B;
 	--black: #000;
 	--background: #fff;
 }
@@ -46,8 +46,7 @@ tr:nth-child(odd) td:nth-last-child(-n+6) {
 }
 
 .asisten td:nth-last-child(-n+6) {
-	background-color: var(--red-light) !important;
-	/* color: #fff; */
+	background-color: var(--yellow) !important;
 }
 
 .header {
