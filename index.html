@@ -1,877 +1,932 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="js-css/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="js-css/style.css" />
+    <title>Jadwal Kuliah</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="js-css/css/bootstrap.min.css">
-	<link rel="stylesheet" href="js-css/style.css">
-	<title>Jadwal Kuliah</title>
-</head>
+  <body>
+    <div class="container-fluid">
+      <div
+        class="row text-center my-3 justify-content-center align-items-center gap-3"
+      >
+        <div class="col">
+          <a href="#semester1" class="btn btn-outline-primary">semester 1</a>
+        </div>
+        <div class="col">
+          <a href="#semester2" class="btn btn-outline-primary">semester 2</a>
+        </div>
+        <div class="col">
+          <a href="#semester3" class="btn btn-outline-primary">semester 3</a>
+        </div>
+        <div class="col">
+          <a href="#semester4" class="btn btn-outline-primary">semester 4</a>
+        </div>
+        <div class="col">
+          <a href="#semester5" class="btn btn-outline-primary">semester 5</a>
+        </div>
+        <div class="col">
+          <a href="#semester6" class="btn btn-outline-primary">semester 6</a>
+        </div>
+        <div class="col">
+          <a href="#semester7" class="btn btn-outline-primary">semester 7</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-9 semester">
+          <h2 id="semester1">semester 1</h2>
+          <div class="table-responsive">
+            <table class="table caption-top">
+              <caption>
+                Matkul
+              </caption>
+              <thead>
+                <tr class="header">
+                  <th scope="col">HARI</th>
+                  <th scope="col">JAM</th>
+                  <th scope="col">KODE</th>
+                  <th scope="col">MATA KULIAH/PRAKTIKUM</th>
+                  <th scope="col">Dosen</th>
+                  <th scope="col">KELAS/LAB</th>
+                  <th>SKS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Senin</td>
+                  <td>07:30-10:30 WIB</td>
+                  <td>211810811</td>
+                  <td>Praktikum Dasar Pemrograman</td>
+                  <td>Rusydi Umar, S.T., M.T., Ph.D</td>
+                  <td>Lab Jaringan</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td rowspan="2">Selasa</td>
+                  <td>07:00-08:40 WIB</td>
+                  <td>211810331</td>
+                  <td>Dasar Sistem Komputer</td>
+                  <td>Taufiq Ismail, S.T., M.Cs.</td>
+                  <td>G</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>16:10-17:50 WIB</td>
+                  <td>211810120</td>
+                  <td>Al Quran dan Hadits</td>
+                  <td>Drs., Nurrochid Hasan</td>
+                  <td>G</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">Rabu</td>
+                  <td>07:00-09:35 WIB</td>
+                  <td>211810630</td>
+                  <td>Manajemen Data dan Informasi</td>
+                  <td>Jefree Fahana, S.T., M.Kom</td>
+                  <td>G</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>09:35-12:10 WIB</td>
+                  <td>211810230</td>
+                  <td>Dasar Pemrograman</td>
+                  <td>Bambang Robiin, S.T.,M.T.</td>
+                  <td>G</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>13:30-15:00 WIB</td>
+                  <td></td>
+                  <td>Praktikum Logika Informatika</td>
+                  <td>Fitri Indra Indikawati, S.Kom., M.Eng.</td>
+                  <td>Lab Komputasi Dasar</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td rowspan="2">Kamis</td>
+                  <td>07:00-08:40 WIB</td>
+                  <td>211810720</td>
+                  <td>Pancasila</td>
+                  <td>Juwanti, M.Pd.</td>
+                  <td>G</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>08:45-10:25 WIB</td>
+                  <td>211810531</td>
+                  <td>Logika Informatika</td>
+                  <td>Dwi Normawati, S.T., M.Eng.</td>
+                  <td>G</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td rowspan="2">Jumat</td>
+                  <td>12:30-15:05 WIB</td>
+                  <td>211810431</td>
+                  <td>Kalkulus Informatika</td>
+                  <td>Ahmad Azhari, S.Kom., M.Eng.</td>
+                  <td>G</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>15:00-16:30 WIB</td>
+                  <td></td>
+                  <td>Praktikum Dasar Sistem Komputer</td>
+                  <td>Ahmad Azhari, S.Kom., M.Eng.</td>
+                  <td>Lab Komputasi Dasar</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h2 id="semester2">semester 2</h2>
+          <div class="table-responsive">
+            <table class="table caption-top">
+              <caption>
+                Matkul
+              </caption>
+              <thead>
+                <tr class="header">
+                  <th scope="col">HARI</th>
+                  <th scope="col">JAM</th>
+                  <th scope="col">KODE</th>
+                  <th scope="col">MATA KULIAH/PRAKTIKUM</th>
+                  <th scope="col">Dosen</th>
+                  <th scope="col">KELAS/LAB</th>
+                  <th>SKS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2">Senin</td>
+                  <td>07:00-08:40 WIB</td>
+                  <td>211820820</td>
+                  <td>Pendidikan Kewarganegaraan</td>
+                  <td>Uni Tsulasi Putri, S.H., M.H.</td>
+                  <td>G</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>14:45-16:05 WIB</td>
+                  <td>211820120</td>
+                  <td>Akhlak</td>
+                  <td>Arsyada Rakhmah, Lc., M.H.</td>
+                  <td>G</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">Selasa</td>
+                  <td>07:00-08:40 WIB</td>
+                  <td>211820520</td>
+                  <td>Bahasa Indonesia</td>
+                  <td>Lutfiatun Latifah, M.Pd.</td>
+                  <td>G</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>09:00-10:30 WIB</td>
+                  <td></td>
+                  <td>Praktikum Matematika Diskret</td>
+                  <td>Nur Rochmah Dyah PA, S.T., M.Kom.</td>
+                  <td>Lab Komputasi Dasar</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>13:30-16:30 WIB</td>
+                  <td></td>
+                  <td>Praktikum Algoritma Pemrograman</td>
+                  <td>Ardi Pujiyanta, Ir., M.T.</td>
+                  <td>Lab Jaringan</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td rowspan="2">Rabu</td>
+                  <td>08:45-10:25 WIB</td>
+                  <td>211820731</td>
+                  <td>Pemrograman Web</td>
+                  <td>Ali Tarmuji, S.T., M.Cs.</td>
+                  <td>Lab Riset Relata</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>12:30-14:10 WIB</td>
+                  <td>211820631</td>
+                  <td>Matematika Diskrit</td>
+                  <td>Dewi Soyusiowaty, S.T., M.T.</td>
+                  <td>4.1.5.60</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td rowspan="2">Kamis</td>
+                  <td>08:45-10:25 WIB</td>
+                  <td>211820230</td>
+                  <td>Algoritma Pemrograman</td>
+                  <td>Dr., Ir., Ardi Pujiyanta, M.T.</td>
+                  <td>4.1.5.60</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>12:30-14:10 WIB</td>
+                  <td>211820430</td>
+                  <td>Arsitektur Komputer</td>
+                  <td>Bambang Robiin, S.T.,M.T.</td>
+                  <td>4.1.5.Meeting</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td rowspan="2">Sabtu</td>
+                  <td>10:30-12:10 WIB</td>
+                  <td>211820320</td>
+                  <td>Aljabar Linear Matrik</td>
+                  <td>Faisal Fajri Rahani, S.Si., M.Cs.</td>
+                  <td>4.1.5.59</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>13:30-15:00 WIB</td>
+                  <td></td>
+                  <td>Praktikum Pemrograman Web</td>
+                  <td>Taufiq Ismail, S.T., M.Cs.</td>
+                  <td>Lab Multimedia</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h2 id="semester3">semester 3</h2>
+          <div class="table-responsive">
+            <table class="table caption-top">
+              <caption>
+                Matkul
+              </caption>
+              <thead>
+                <tr class="header">
+                  <th scope="col">HARI</th>
+                  <th scope="col">JAM</th>
+                  <th scope="col">KODE</th>
+                  <th scope="col">MATA KULIAH/PRAKTIKUM</th>
+                  <th scope="col">Dosen</th>
+                  <th scope="col">KELAS/LAB</th>
+                  <th>SKS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2">Senin</td>
+                  <td>09:00-10:30 WIB</td>
+                  <td></td>
+                  <td>Praktikum Struktur Data</td>
+                  <td>Ardi Pujiyanta, Ir., M.T.</td>
+                  <td>Lab Komputasi Dasar</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>12:30-15:05 WIB</td>
+                  <td>211830341</td>
+                  <td>Basis Data</td>
+                  <td>Jefree Fahana, S.T., M.Kom</td>
+                  <td>4.1.5.59</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">Selasa</td>
+                  <td>07:00-08:40 WIB</td>
+                  <td>211830531</td>
+                  <td>Sistem Operasi</td>
+                  <td>Faisal Fajri Rahani, S.Si., M.Cs.</td>
+                  <td>Daring ( T. Informatika )</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>09:35-12:10 WIB</td>
+                  <td>211830641</td>
+                  <td>Statistika Informatika</td>
+                  <td>Lisna Zahrotun, S.T., M.Cs.</td>
+                  <td>4.1.5.57</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>15:00-16:30 WIB</td>
+                  <td></td>
+                  <td>Praktikum Sistem Operasi</td>
+                  <td>Nuril Anwar, S.T., M.Kom.</td>
+                  <td>Lab Komputasi Dasar</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td rowspan="3">Rabu</td>
+                  <td>08:45-10:25 WIB</td>
+                  <td>211830431</td>
+                  <td>Pemrograman Berorientasi Objek</td>
+                  <td>Ali Tarmuji, S.T., M.Cs.</td>
+                  <td>4.1.5.55</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>12:30-14:10 WIB</td>
+                  <td>211830731</td>
+                  <td>Struktur Data</td>
+                  <td>Dr., Ir., Ardi Pujiyanta, M.T.</td>
+                  <td>4.1.5.59</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>15:00-16:30 WIB</td>
+                  <td></td>
+                  <td>Praktikum Pemrograman Berbasis Objek</td>
+                  <td>Supriyanto, S.T., M.T.</td>
+                  <td>Lab Jaringan</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td rowspan="1">Kamis</td>
+                  <td>12:30-14:10 WIB</td>
+                  <td>211830220</td>
+                  <td>Bahasa Inggris</td>
+                  <td>
+                    <ul>
+                      <li>Kartika Juni Ambarita, S.S., M.A.</li>
+                      <li>Drs., MAFTUKHIN, M.Hum.</li>
+                    </ul>
+                  </td>
+                  <td>Daring ( T. Informatika )</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td rowspan="1">Jumat</td>
+                  <td>07:30-10:30 WIB</td>
+                  <td></td>
+                  <td>Praktikum Basis Data</td>
+                  <td>Jefree Fahana, S.T., M.Kom</td>
+                  <td>Lab Basis Data</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td rowspan="2">Sabtu</td>
+                  <td>08:45-10:25 WIB</td>
+                  <td>211830120</td>
+                  <td>Aqidah Islam</td>
+                  <td>Nayif Fairuza, S.Hum., M.A.</td>
+                  <td>Daring ( T. Informatika )</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>10:30-13:30 WIB</td>
+                  <td></td>
+                  <td>Praktikum Statistika Informatika</td>
+                  <td>Miftahurrahma R., S.Kom., M.Eng.</td>
+                  <td>Lab Riset (Daring)</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h2 id="semester4">semester 4</h2>
+          <div class="table-responsive">
+            <table class="table caption-top">
+              <caption>
+                Matkul
+              </caption>
+              <thead>
+                <tr class="header">
+                  <th scope="col">HARI</th>
+                  <th scope="col">JAM</th>
+                  <th scope="col">KODE</th>
+                  <th scope="col">MATA KULIAH/PRAKTIKUM</th>
+                  <th scope="col">Dosen</th>
+                  <th scope="col">KELAS/LAB</th>
+                  <th>SKS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="3">Senin</td>
+                  <td>08:45-10:25 WIB</td>
+                  <td>211840420</td>
+                  <td>Islam Interdisipliner</td>
+                  <td>
+                    <ul>
+                      <li>Husnul Khotimah Husaeri, S.Psi., S.H.I., M.Sc</li>
+                      <li>Thonthowi, S.Ag., M.Hum.</li>
+                    </ul>
+                  </td>
+                  <td>Daring ( T. Informatika )</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>12:00-13:30 WIB</td>
+                  <td></td>
+                  <td>Praktikum analisis dan Perancangan perangkat lunak</td>
+                  <td>Arfiani nur khusna, s.t.</td>
+                  <td>riset dan sistem cerdas (daring)</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>16:10-17:50 WIB</td>
+                  <td>211840231</td>
+                  <td>Grafika Komputer</td>
+                  <td>Ahmad Azhari, S.Kom., M.Eng.</td>
+                  <td>4.1.5.55</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td rowspan="2">Selasa</td>
+                  <td>12:30-14:10 WIB</td>
+                  <td>211840831</td>
+                  <td>Strategi Algoritma</td>
+                  <td>Dr., Ir., Ardi Pujiyanta, M.T.</td>
+                  <td>4.1.5.57</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>15.00-16.30 WIB</td>
+                  <td></td>
+                  <td>praktikum grafika komputer</td>
+                  <td>ahmad azhari, s.kom., m.eng.</td>
+                  <td>multimedia</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td rowspan="1">Rabu</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td rowspan="3">Kamis</td>
+                  <td>07:00-08:40 WIB</td>
+                  <td>211840531</td>
+                  <td>Kecerdasan Buatan</td>
+                  <td>Sri Winiarti, S.T., M.Cs.</td>
+                  <td>4.1.5.57</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>10:30-12:10 WIB</td>
+                  <td>211840330</td>
+                  <td>Interaksi Manusia dan Komputer</td>
+                  <td>Murein Miksa Mardhia, S.T., M.T.</td>
+                  <td>4.1.5.55</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>13.30-16.30 WIB</td>
+                  <td></td>
+                  <td>praktikum komunikasi data dan jaringan komputer</td>
+                  <td>nuril anwar, s.t., m.kom.</td>
+                  <td>jaringan</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td rowspan="2">Jumat</td>
+                  <td>07:00-08:40 WIB</td>
+                  <td>211840131</td>
+                  <td>Analisis dan Perancangan Perangkat Lunak</td>
+                  <td>Arfiani Nur Khusna, S.T., M.Kom.</td>
+                  <td>4.1.5.59</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>09:00-10:30 WIB</td>
+                  <td></td>
+                  <td>praktikum kecerdasan buatan</td>
+                  <td>sri winiarti s.t., m.cs.</td>
+                  <td>basis data</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td rowspan="3">Sabtu</td>
+                  <td>07:00-09:00 WIB</td>
+                  <td></td>
+                  <td>praktikum strategi algoritma</td>
+                  <td>ardi pujiyanta, ir., m.t.</td>
+                  <td>komputasi cerdas</td>
+                  <td></td>
+                </tr>
 
-<body>
-	<div class="container-fluid">
-		<div class="row text-center my-3 justify-content-center align-items-center gap-3">
-			<div class="col">
-				<a href="#semester1" class="btn btn-outline-primary">semester 1</a>
-			</div>
-			<div class="col">
-				<a href="#semester2" class="btn btn-outline-primary">semester 2</a>
-			</div>
-			<div class="col">
-				<a href="#semester3" class="btn btn-outline-primary">semester 3</a>
-			</div>
-			<div class="col">
-				<a href="#semester4" class="btn btn-outline-primary">semester 4</a>
-			</div>
-			<div class="col">
-				<a href="#semester5" class="btn btn-outline-primary">semester 5</a>
-			</div>
-			<div class="col">
-				<a href="#semester6" class="btn btn-outline-primary">semester 6</a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-9 semester">
-				<h2 id="semester1">semester 1</h2>
-				<div class="table-responsive">
-					<table class="table caption-top">
-						<caption>Matkul</caption>
-						<thead>
-							<tr class="header">
-								<th scope="col">HARI</th>
-								<th scope="col">JAM</th>
-								<th scope="col">KODE</th>
-								<th scope="col">MATA KULIAH/PRAKTIKUM</th>
-								<th scope="col">Dosen</th>
-								<th scope="col">KELAS/LAB</th>
-								<th>SKS</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Senin</td>
-								<td>07:30-10:30 WIB</td>
-								<td>211810811</td>
-								<td>Praktikum Dasar Pemrograman</td>
-								<td>Rusydi Umar, S.T., M.T., Ph.D</td>
-								<td>Lab Jaringan</td>
-								<td>1</td>
-							</tr>
-							<tr>
-								<td rowspan="2">Selasa</td>
-								<td>07:00-08:40 WIB</td>
-								<td>211810331</td>
-								<td>Dasar Sistem Komputer</td>
-								<td>Taufiq Ismail, S.T., M.Cs. </td>
-								<td>G</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td>16:10-17:50 WIB</td>
-								<td>211810120</td>
-								<td>Al Quran dan Hadits</td>
-								<td>Drs., Nurrochid Hasan</td>
-								<td>G</td>
-								<td>2</td>
-							</tr>
-							<tr>
-								<td rowspan="3">Rabu</td>
-								<td>07:00-09:35 WIB</td>
-								<td>211810630</td>
-								<td>Manajemen Data dan Informasi</td>
-								<td>Jefree Fahana, S.T., M.Kom</td>
-								<td>G</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td>09:35-12:10 WIB</td>
-								<td>211810230</td>
-								<td>Dasar Pemrograman</td>
-								<td>Bambang Robiin, S.T.,M.T.</td>
-								<td>G</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td>13:30-15:00 WIB</td>
-								<td></td>
-								<td>Praktikum Logika Informatika</td>
-								<td>Fitri Indra Indikawati, S.Kom., M.Eng.</td>
-								<td>Lab Komputasi Dasar</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td rowspan="2">Kamis</td>
-								<td>07:00-08:40 WIB</td>
-								<td>211810720</td>
-								<td>Pancasila</td>
-								<td>Juwanti, M.Pd.</td>
-								<td>G</td>
-								<td>2</td>
-							</tr>
-							<tr>
-								<td>08:45-10:25 WIB</td>
-								<td>211810531</td>
-								<td>Logika Informatika</td>
-								<td>Dwi Normawati, S.T., M.Eng.</td>
-								<td>G</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td rowspan="2">Jumat</td>
-								<td>12:30-15:05 WIB</td>
-								<td>211810431</td>
-								<td>Kalkulus Informatika</td>
-								<td>Ahmad Azhari, S.Kom., M.Eng.</td>
-								<td>G</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td>15:00-16:30 WIB</td>
-								<td></td>
-								<td>Praktikum Dasar Sistem Komputer</td>
-								<td>Ahmad Azhari, S.Kom., M.Eng.</td>
-								<td>Lab Komputasi Dasar</td>
-								<td></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<h2 id="semester2">semester 2</h2>
-				<div class="table-responsive">
-					<table class="table caption-top">
-						<caption>Matkul</caption>
-						<thead>
-							<tr class="header">
-								<th scope="col">HARI</th>
-								<th scope="col">JAM</th>
-								<th scope="col">KODE</th>
-								<th scope="col">MATA KULIAH/PRAKTIKUM</th>
-								<th scope="col">Dosen</th>
-								<th scope="col">KELAS/LAB</th>
-								<th>SKS</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td rowspan="2">Senin</td>
-								<td>07:00-08:40 WIB</td>
-								<td>211820820</td>
-								<td>Pendidikan Kewarganegaraan</td>
-								<td>Uni Tsulasi Putri, S.H., M.H.</td>
-								<td>G</td>
-								<td>2</td>
-							</tr>
-							<tr>
-								<td>14:45-16:05 WIB</td>
-								<td>211820120</td>
-								<td>Akhlak</td>
-								<td>Arsyada Rakhmah, Lc., M.H.</td>
-								<td>G</td>
-								<td>2</td>
-							</tr>
-							<tr>
-								<td rowspan="3">Selasa</td>
-								<td>07:00-08:40 WIB</td>
-								<td>211820520</td>
-								<td>Bahasa Indonesia</td>
-								<td>Lutfiatun Latifah, M.Pd.</td>
-								<td>G</td>
-								<td>2</td>
-							</tr>
-							<tr>
-								<td>09:00-10:30 WIB</td>
-								<td></td>
-								<td>Praktikum Matematika Diskret</td>
-								<td>Nur Rochmah Dyah PA, S.T., M.Kom.</td>
-								<td>Lab Komputasi Dasar</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>13:30-16:30 WIB</td>
-								<td></td>
-								<td>Praktikum Algoritma Pemrograman</td>
-								<td>Ardi Pujiyanta, Ir., M.T.</td>
-								<td>Lab Jaringan</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td rowspan="2">Rabu</td>
-								<td>08:45-10:25 WIB</td>
-								<td>211820731</td>
-								<td>Pemrograman Web</td>
-								<td>Ali Tarmuji, S.T., M.Cs.</td>
-								<td>Lab Riset Relata</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td>12:30-14:10 WIB</td>
-								<td>211820631</td>
-								<td>Matematika Diskrit</td>
-								<td>Dewi Soyusiowaty, S.T., M.T.</td>
-								<td>4.1.5.60</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td rowspan="2">Kamis</td>
-								<td>08:45-10:25 WIB</td>
-								<td>211820230</td>
-								<td>Algoritma Pemrograman</td>
-								<td>Dr., Ir., Ardi Pujiyanta, M.T.</td>
-								<td>4.1.5.60</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td>12:30-14:10 WIB</td>
-								<td>211820430</td>
-								<td>Arsitektur Komputer</td>
-								<td>Bambang Robiin, S.T.,M.T.</td>
-								<td>4.1.5.Meeting</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td rowspan="2">Sabtu</td>
-								<td>10:30-12:10 WIB</td>
-								<td>211820320</td>
-								<td>Aljabar Linear Matrik</td>
-								<td>Faisal Fajri Rahani, S.Si., M.Cs.</td>
-								<td>4.1.5.59</td>
-								<td>2</td>
-							</tr>
-							<tr>
-								<td>13:30-15:00 WIB</td>
-								<td></td>
-								<td>Praktikum Pemrograman Web</td>
-								<td>Taufiq Ismail, S.T., M.Cs.</td>
-								<td>Lab Multimedia</td>
-								<td></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<h2 id="semester3">semester 3</h2>
-				<div class="table-responsive">
-					<table class="table caption-top">
-						<caption>Matkul</caption>
-						<thead>
-							<tr class="header">
-								<th scope="col">HARI</th>
-								<th scope="col">JAM</th>
-								<th scope="col">KODE</th>
-								<th scope="col">MATA KULIAH/PRAKTIKUM</th>
-								<th scope="col">Dosen</th>
-								<th scope="col">KELAS/LAB</th>
-								<th>SKS</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td rowspan="2">Senin</td>
-								<td>09:00-10:30 WIB</td>
-								<td></td>
-								<td>Praktikum Struktur Data</td>
-								<td>Ardi Pujiyanta, Ir., M.T.</td>
-								<td>Lab Komputasi Dasar</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>12:30-15:05 WIB</td>
-								<td>211830341</td>
-								<td>Basis Data</td>
-								<td>Jefree Fahana, S.T., M.Kom</td>
-								<td>4.1.5.59</td>
-								<td>4</td>
-							</tr>
-							<tr>
-								<td rowspan="3">Selasa</td>
-								<td>07:00-08:40 WIB</td>
-								<td>211830531</td>
-								<td>Sistem Operasi</td>
-								<td>Faisal Fajri Rahani, S.Si., M.Cs.</td>
-								<td>Daring ( T. Informatika )</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td>09:35-12:10 WIB</td>
-								<td>211830641</td>
-								<td>Statistika Informatika</td>
-								<td>Lisna Zahrotun, S.T., M.Cs.</td>
-								<td>4.1.5.57</td>
-								<td>4</td>
-							</tr>
-							<tr>
-								<td>15:00-16:30 WIB</td>
-								<td></td>
-								<td>Praktikum Sistem Operasi</td>
-								<td>Nuril Anwar, S.T., M.Kom.</td>
-								<td>Lab Komputasi Dasar</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td rowspan="3">Rabu</td>
-								<td>08:45-10:25 WIB</td>
-								<td>211830431</td>
-								<td>Pemrograman Berorientasi Objek</td>
-								<td>Ali Tarmuji, S.T., M.Cs.</td>
-								<td>4.1.5.55</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td>12:30-14:10 WIB</td>
-								<td>211830731</td>
-								<td>Struktur Data</td>
-								<td>Dr., Ir., Ardi Pujiyanta, M.T.</td>
-								<td>4.1.5.59</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td>15:00-16:30 WIB</td>
-								<td></td>
-								<td>Praktikum Pemrograman Berbasis Objek</td>
-								<td>Supriyanto, S.T., M.T.</td>
-								<td>Lab Jaringan</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td rowspan="1">Kamis</td>
-								<td>12:30-14:10 WIB</td>
-								<td>211830220</td>
-								<td>Bahasa Inggris</td>
-								<td>
-									<ul>
-										<li>Kartika Juni Ambarita, S.S., M.A.</li>
-										<li>Drs., MAFTUKHIN, M.Hum.</li>
-									</ul>
-								</td>
-								<td>Daring ( T. Informatika )</td>
-								<td>2</td>
-							</tr>
-							<tr>
-								<td rowspan="1">Jumat</td>
-								<td>07:30-10:30 WIB</td>
-								<td></td>
-								<td>Praktikum Basis Data</td>
-								<td>Jefree Fahana, S.T., M.Kom</td>
-								<td>Lab Basis Data</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td rowspan="2">Sabtu</td>
-								<td>08:45-10:25 WIB</td>
-								<td>211830120</td>
-								<td>Aqidah Islam</td>
-								<td>Nayif Fairuza, S.Hum., M.A.</td>
-								<td>Daring ( T. Informatika )</td>
-								<td>2</td>
-							</tr>
-							<tr>
-								<td>10:30-13:30 WIB</td>
-								<td></td>
-								<td>Praktikum Statistika Informatika</td>
-								<td>Miftahurrahma R., S.Kom., M.Eng.</td>
-								<td>Lab Riset (Daring)</td>
-								<td></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<h2 id="semester4">semester 4</h2>
-				<div class="table-responsive">
-					<table class="table caption-top">
-						<caption>Matkul</caption>
-						<thead>
-							<tr class="header">
-								<th scope="col">HARI</th>
-								<th scope="col">JAM</th>
-								<th scope="col">KODE</th>
-								<th scope="col">MATA KULIAH/PRAKTIKUM</th>
-								<th scope="col">Dosen</th>
-								<th scope="col">KELAS/LAB</th>
-								<th>SKS</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td rowspan="3">Senin</td>
-								<td>08:45-10:25 WIB</td>
-								<td>211840420</td>
-								<td>Islam Interdisipliner</td>
-								<td>
-									<ul>
-										<li>Husnul Khotimah Husaeri, S.Psi., S.H.I., M.Sc</li>
-										<li>Thonthowi, S.Ag., M.Hum.</li>
-									</ul>
-								</td>
-								<td>Daring ( T. Informatika )</td>
-								<td>2</td>
-							</tr>
-							<tr>
-								<td>12:00-13:30 WIB</td>
-								<td></td>
-								<td>Praktikum analisis dan Perancangan perangkat lunak</td>
-								<td>Arfiani nur khusna, s.t.</td>
-								<td>riset dan sistem cerdas (daring)</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>16:10-17:50 WIB</td>
-								<td>211840231</td>
-								<td>Grafika Komputer</td>
-								<td>Ahmad Azhari, S.Kom., M.Eng.</td>
-								<td>4.1.5.55</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td rowspan="2">Selasa</td>
-								<td>12:30-14:10 WIB</td>
-								<td>211840831</td>
-								<td>Strategi Algoritma</td>
-								<td>Dr., Ir., Ardi Pujiyanta, M.T.</td>
-								<td>4.1.5.57</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td>15.00-16.30 WIB</td>
-								<td></td>
-								<td>praktikum grafika komputer</td>
-								<td>ahmad azhari, s.kom., m.eng.</td>
-								<td>multimedia</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td rowspan="1">Rabu</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td rowspan="3">Kamis</td>
-								<td>07:00-08:40 WIB</td>
-								<td>211840531</td>
-								<td>Kecerdasan Buatan</td>
-								<td>Sri Winiarti, S.T., M.Cs.</td>
-								<td>4.1.5.57</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td>10:30-12:10 WIB</td>
-								<td>211840330</td>
-								<td>Interaksi Manusia dan Komputer</td>
-								<td>Murein Miksa Mardhia, S.T., M.T.</td>
-								<td>4.1.5.55</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td>13.30-16.30 WIB</td>
-								<td></td>
-								<td>praktikum komunikasi data dan jaringan komputer</td>
-								<td>nuril anwar, s.t., m.kom.</td>
-								<td>jaringan</td>
-								<td>1</td>
-							</tr>
-							<tr>
-								<td rowspan="2">Jumat</td>
-								<td>07:00-08:40 WIB</td>
-								<td>211840131</td>
-								<td>Analisis dan Perancangan Perangkat Lunak</td>
-								<td>Arfiani Nur Khusna, S.T., M.Kom.</td>
-								<td>4.1.5.59</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td>09:00-10:30 WIB</td>
-								<td></td>
-								<td>praktikum kecerdasan buatan</td>
-								<td>sri winiarti s.t., m.cs.</td>
-								<td>basis data</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td rowspan="3">Sabtu</td>
-								<td>07:00-09:00 WIB</td>
-								<td></td>
-								<td>praktikum strategi algoritma</td>
-								<td>ardi pujiyanta, ir., m.t.</td>
-								<td>komputasi cerdas</td>
-								<td></td>
-							<tr>
-								<td>12:30-15:05 WIB</td>
-								<td>211840630</td>
-								<td>Komunikasi Data dan Jaringan Komputer</td>
-								<td>Nuril Anwar, S.T., M.Kom</td>
-								<td>4.1.6.75</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td>16:10-17:50 WIB</td>
-								<td>211850500</td>
-								<td>Tahsinul Quran</td>
-								<td>Fadiya Nur Fithri</td>
-								<td>4.1.5.68</td>
-								<td>0</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<h2 id="semester5">semester 5</h2>
-				<div class="table-responsive">
-					<table class="table caption-top">
-						<caption>Matkul</caption>
-						<thead>
-							<tr class="header">
-								<th scope="col">HARI</th>
-								<th scope="col">JAM</th>
-								<th scope="col">KODE</th>
-								<th scope="col">MATA KULIAH/PRAKTIKUM</th>
-								<th scope="col">Dosen</th>
-								<th scope="col">KELAS/LAB</th>
-								<th>SKS</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr class="asisten">
-								<td rowspan="5">Senin</td>
-								<td>07:30-10:30 WIB</td>
-								<td></td>
-								<td>asisten basis data</td>
-								<td></td>
-								<td>basis data</td>
-								<td></td>
-							</tr>
-							<tr class="asisten">
-								<td>10:30-12:00 WIB</td>
-								<td></td>
-								<td>asisten Struktur Data</td>
-								<td></td>
-								<td>Komputasi Dasar</td>
-								<td></td>
-							</tr>
-							<tr class="asisten">
-								<td>12:00-13:30 WIB</td>
-								<td></td>
-								<td>asisten Struktur Data</td>
-								<td></td>
-								<td>Komputasi Dasar</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>13:30-15:00 WIB</td>
-								<td></td>
-								<td>praktikum Pemrograman Web dinamis</td>
-								<td>Fiftin N., S.T., M.Cs.</td>
-								<td>basis data</td>
-								<td></td>
-							</tr>
-							<tr class="asisten">
-								<td>15:00-16:30 WIB</td>
-								<td></td>
-								<td>asisten Pemrograman Berbasis Objek</td>
-								<td></td>
-								<td>Multimedia</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td rowspan="4">Selasa</td>
-								<td>07:00-08:40 WIB</td>
-								<td>211850931</td>
-								<td>Penjaminan Kualitas Perangkat Lunak</td>
-								<td>Dr., Ardiansyah, S.T., M.Cs.</td>
-								<td>4.1.5.57</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td>10:30-12:10 WIB</td>
-								<td>211850320</td>
-								<td>Pengantar Manajemen dan Prinsip Proyek</td>
-								<td>Arfiani Nur Khusna, S.T., M.Kom.</td>
-								<td>Daring ( T. Informatika )</td>
-								<td>2</td>
-							</tr>
-							<tr>
-								<td>12:30-14:10 WIB</td>
-								<td>211850231</td>
-								<td>Pemrograman Mobile</td>
-								<td>Guntur Maulana Zamroni, B.Sc., M.Kom.</td>
-								<td>Daring ( T. Informatika )</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td>15:00-16:30 WIB</td>
-								<td></td>
-								<td>praktikum teknik optimasi</td>
-								<td>Dr. Ardiansyah, S.T., M.Cs</td>
-								<td>komputasi dasar</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td rowspan="3">Rabu</td>
-								<td>08:45-10:25 WIB</td>
-								<td>211850131</td>
-								<td>Keamanan Komputer</td>
-								<td>Eko Aribowo, S.T., M.Kom.</td>
-								<td>Daring ( T. Informatika )</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td>10:30-12:00 WIB</td>
-								<td></td>
-								<td>praktikum Keamanan Komputer</td>
-								<td>Eko Aribowo, S.T., M.Kom.</td>
-								<td>multimedia</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>12:30-14:10 WIB</td>
-								<td>211850731</td>
-								<td>Pemrograman Web Dinamis</td>
-								<td>Fiftin Noviyanto, S.T., M.Cs.</td>
-								<td>4.1.5.55</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td rowspan="1">Kamis</td>
-								<td>08:45-10:25 WIB</td>
-								<td>211850420</td>
-								<td>Teori Bahasa Otomata</td>
-								<td>Dr., Ir., Ardi Pujiyanta, M.T.</td>
-								<td>Daring ( T. Informatika )</td>
-								<td>2</td>
-							</tr>
-							<tr class="asisten">
-								<td rowspan="3">Jumat</td>
-								<td>07:30-10:30 WIB</td>
-								<td></td>
-								<td>asisten basis Data</td>
-								<td></td>
-								<td>basis data</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>12:30-14:10 WIB</td>
-								<td>211851031</td>
-								<td>Teknik Optimasi</td>
-								<td>Dr., Ardiansyah, S.T., M.Cs.</td>
-								<td>4.1.5.55</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td>16:10-17:50 WIB</td>
-								<td>211870800</td>
-								<td>Fiqih Ibadah</td>
-								<td>Drs., Nurrochid Hasan, M.S.I</td>
-								<td>4.1.5.67</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td rowspan="4">Sabtu</td>
-								<td>07:00-08:40 WIB</td>
-								<td>211860500</td>
-								<td>Kemuhammadiyahan</td>
-								<td>Fharkhan Luthfi, S.Kom.I., M.Sos.</td>
-								<td>4.1.4.31</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td>08:45-10:25 WIB</td>
-								<td>211870120</td>
-								<td>Bahasa Inggris Profesional</td>
-								<td>
-									<ul>
-										<li>Dwi Nita Febriyanti, S.Pd.,M.Hum</li>
-										<li>R MUHAMMAD ALI, S.S., M.Pd.</li>
-									</ul>
-								</td>
-								<td>Daring ( T. Informatika )</td>
-								<td>2</td>
-							</tr>
-							<tr>
-								<td>13:30-15:00 WIB</td>
-								<td></td>
-								<td>praktikum Pemrograman Mobile</td>
-								<td>Dinan Yulianto, S.T., M.Eng.</td>
-								<td>jaringan</td>
-								<td></td>
-							</tr>
-							<tr class="asisten">
-								<td>15:00-16:30 WIB</td>
-								<td></td>
-								<td>asisten Pemrograman Berbasis Objek</td>
-								<td></td>
-								<td>Multimedia</td>
-								<td></td>
-							</tr>
-						</tbody>
-					</table>
-				</div><h2 id="semester6">semester 6</h2>
-				<div class="table-responsive">
-					<table class="table caption-top">
-						<caption>Matkul</caption>
-						<thead>
-							<tr class="header">
-								<th scope="col">HARI</th>
-								<th scope="col">JAM</th>
-								<th scope="col">KODE</th>
-								<th scope="col">MATA KULIAH/PRAKTIKUM</th>
-								<th scope="col">Dosen</th>
-								<th scope="col">KELAS/LAB</th>
-								<th>SKS</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Senin</td>
-								<td>12:30-15:05 WIB</td>
-								<td>211860330</td>
-								<td>Rekayasa Perangkat Lunak</td>
-								<td>Dr., Ardiansyah, S.T., M.Cs.</td>
-								<td>4.1.5.67</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td rowspan="3">Selasa</td>
-								<td>08:45-10:25 WIB</td>
-								<td>211860120</td>
-								<td>Manajemen Proyek Teknologi Informasi</td>
-								<td>Nur Rochmah Dyah PA, S.T., M.Kom.</td>
-								<td>Daring ( T. Informatika )</td>
-								<td>2</td>
-							</tr>
-							<tr class="asisten">
-								<td>10:00-11:30 WIB</td>
-								<td></td>
-								<td>asisten pemrograman web</td>
-								<td></td>
-								<td>Jaringan</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>13:45-15:15 WIB</td>
-								<td></td>
-								<td>praktikum Teknologi Multimedia</td>
-								<td>Ir. Ika Arfiani, S.T., M.Cs.</td>
-								<td>Jaringan</td>
-								<td></td>
-							</tr>
-							<tr class="asisten">
-								<td rowspan="2">Rabu</td>
-								<td>08:30-10:00 WIB</td>
-								<td></td>
-								<td>asisten pemrograman web</td>
-								<td></td>
-								<td>Jaringan</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>15:15-16:45 WIB</td>
-								<td></td>
-								<td>praktikum Rekayasa Web</td>
-								<td>Dinan Yulianto, S.T., M.Eng.</td>
-								<td>Basis Data</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td rowspan="3">Kamis</td>
-								<td>10:30-12.10 WIB</td>
-								<td>211860931</td>
-								<td>Sistem terdistribusi</td>
-								<td>Mushlihudin, S.T., M.T.</td>
-								<td>Daring ( T. Informatika )</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td>12:15-13:45 WIB</td>
-								<td></td>
-								<td>praktikum Keamanan Informasi</td>
-								<td>Prof. Dr. Ir. Imam Riadi, M.Kom</td>
-								<td>Basis Data</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>13:45-15:15 WIB</td>
-								<td></td>
-								<td>praktikum Sistem Terdistribusi</td>
-								<td>Mushlihuddin, S.T., M.T</td>
-								<td>Basis Data</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td rowspan="3">Jumat</td>
-								<td>07:00-08:40 WIB</td>
-								<td>211860220</td>
-								<td>Metodologi Penelitian</td>
-								<td>Dr., Ardiansyah, S.T., M.Cs.</td>
-								<td>Daring ( T. Informatika )</td>
-								<td>2</td>
-							</tr>
-							<tr>
-								<td>08:45-10:25 WIB</td>
-								<td>211860531</td>
-								<td>Keamanan Informasi</td>
-								<td>Prof. Dr. Ir., H. Imam Riadi, M.Kom.</td>
-								<td>Daring ( T. Informatika )</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td>12:30-14:10 WIB</td>
-								<td>211860431</td>
-								<td>Teknologi Multimedia</td>
-								<td>Dinan Yulianto, S.T., M.Eng.</td>
-								<td>Daring ( T. Informatika )</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td>Sabtu</td>
-								<td>14:15-16:05 WIB</td>
-								<td>211860731</td>
-								<td>Rekayasa Web</td>
-								<td>Supriyanto, S.T., M.T.</td>
-								<td>4.1.5.55</td>
-								<td>3</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-			<div class="col-3 jam-waktu">
-				<div class="jam pt-1 sticky-top">
-					<div class="bungkus-2">
-						<div class="bungkus tanggal">
-							<div class="date">senin, 1 januari 2020</div>
-						</div>
-						<div class="bungkus">
-							<div class="clock" timezone="+7">00:00:00</div>
-							<div class="timezone">WIB</div>
-						</div>
-						<div class="bungkus">
-							<div class="clock" timezone="+8">00:00:00</div>
-							<div class="timezone">WITA</div>
-						</div>
-						<div class="bungkus">
-							<div class="clock" timezone="+9">00:00:00</div>
-							<div class="timezone">WIT</div>
-						</div>
-					</div>
-					<div id="clock">
-						<input onchange="setAlarmTime(this.value)" name="alarmTime" type="datetime-local">
-						<div class="controls">
-							<!-- <button onclick="setAlarm()" class="button set-alarm">Set alarm</button> -->
-							<button class="button set-alarm">Set alarm</button>
-							<!-- <button onclick="clearAlarm()" class="button clear-alarm">Clear alarm</button> -->
-							<button class="button clear-alarm">Clear alarm</button>
-						</div>
-					</div>
-					<small>NOTE! : waktu untuk alarm adalah waktu lokal di komputer kalian</small>
-				</div>
-			</div>
-		</div>
-	</div>
+                <tr>
+                  <td>12:30-15:05 WIB</td>
+                  <td>211840630</td>
+                  <td>Komunikasi Data dan Jaringan Komputer</td>
+                  <td>Nuril Anwar, S.T., M.Kom</td>
+                  <td>4.1.6.75</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>16:10-17:50 WIB</td>
+                  <td>211850500</td>
+                  <td>Tahsinul Quran</td>
+                  <td>Fadiya Nur Fithri</td>
+                  <td>4.1.5.68</td>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h2 id="semester5">semester 5</h2>
+          <div class="table-responsive">
+            <table class="table caption-top">
+              <caption>
+                Matkul
+              </caption>
+              <thead>
+                <tr class="header">
+                  <th scope="col">HARI</th>
+                  <th scope="col">JAM</th>
+                  <th scope="col">KODE</th>
+                  <th scope="col">MATA KULIAH/PRAKTIKUM</th>
+                  <th scope="col">Dosen</th>
+                  <th scope="col">KELAS/LAB</th>
+                  <th>SKS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="asisten">
+                  <td rowspan="5">Senin</td>
+                  <td>07:30-10:30 WIB</td>
+                  <td></td>
+                  <td>asisten basis data</td>
+                  <td></td>
+                  <td>basis data</td>
+                  <td></td>
+                </tr>
+                <tr class="asisten">
+                  <td>10:30-12:00 WIB</td>
+                  <td></td>
+                  <td>asisten Struktur Data</td>
+                  <td></td>
+                  <td>Komputasi Dasar</td>
+                  <td></td>
+                </tr>
+                <tr class="asisten">
+                  <td>12:00-13:30 WIB</td>
+                  <td></td>
+                  <td>asisten Struktur Data</td>
+                  <td></td>
+                  <td>Komputasi Dasar</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>13:30-15:00 WIB</td>
+                  <td></td>
+                  <td>praktikum Pemrograman Web dinamis</td>
+                  <td>Fiftin N., S.T., M.Cs.</td>
+                  <td>basis data</td>
+                  <td></td>
+                </tr>
+                <tr class="asisten">
+                  <td>15:00-16:30 WIB</td>
+                  <td></td>
+                  <td>asisten Pemrograman Berbasis Objek</td>
+                  <td></td>
+                  <td>Multimedia</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td rowspan="4">Selasa</td>
+                  <td>07:00-08:40 WIB</td>
+                  <td>211850931</td>
+                  <td>Penjaminan Kualitas Perangkat Lunak</td>
+                  <td>Dr., Ardiansyah, S.T., M.Cs.</td>
+                  <td>4.1.5.57</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>10:30-12:10 WIB</td>
+                  <td>211850320</td>
+                  <td>Pengantar Manajemen dan Prinsip Proyek</td>
+                  <td>Arfiani Nur Khusna, S.T., M.Kom.</td>
+                  <td>Daring ( T. Informatika )</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>12:30-14:10 WIB</td>
+                  <td>211850231</td>
+                  <td>Pemrograman Mobile</td>
+                  <td>Guntur Maulana Zamroni, B.Sc., M.Kom.</td>
+                  <td>Daring ( T. Informatika )</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>15:00-16:30 WIB</td>
+                  <td></td>
+                  <td>praktikum teknik optimasi</td>
+                  <td>Dr. Ardiansyah, S.T., M.Cs</td>
+                  <td>komputasi dasar</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td rowspan="3">Rabu</td>
+                  <td>08:45-10:25 WIB</td>
+                  <td>211850131</td>
+                  <td>Keamanan Komputer</td>
+                  <td>Eko Aribowo, S.T., M.Kom.</td>
+                  <td>Daring ( T. Informatika )</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>10:30-12:00 WIB</td>
+                  <td></td>
+                  <td>praktikum Keamanan Komputer</td>
+                  <td>Eko Aribowo, S.T., M.Kom.</td>
+                  <td>multimedia</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>12:30-14:10 WIB</td>
+                  <td>211850731</td>
+                  <td>Pemrograman Web Dinamis</td>
+                  <td>Fiftin Noviyanto, S.T., M.Cs.</td>
+                  <td>4.1.5.55</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td rowspan="1">Kamis</td>
+                  <td>08:45-10:25 WIB</td>
+                  <td>211850420</td>
+                  <td>Teori Bahasa Otomata</td>
+                  <td>Dr., Ir., Ardi Pujiyanta, M.T.</td>
+                  <td>Daring ( T. Informatika )</td>
+                  <td>2</td>
+                </tr>
+                <tr class="asisten">
+                  <td rowspan="3">Jumat</td>
+                  <td>07:30-10:30 WIB</td>
+                  <td></td>
+                  <td>asisten basis Data</td>
+                  <td></td>
+                  <td>basis data</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>12:30-14:10 WIB</td>
+                  <td>211851031</td>
+                  <td>Teknik Optimasi</td>
+                  <td>Dr., Ardiansyah, S.T., M.Cs.</td>
+                  <td>4.1.5.55</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>16:10-17:50 WIB</td>
+                  <td>211870800</td>
+                  <td>Fiqih Ibadah</td>
+                  <td>Drs., Nurrochid Hasan, M.S.I</td>
+                  <td>4.1.5.67</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td rowspan="4">Sabtu</td>
+                  <td>07:00-08:40 WIB</td>
+                  <td>211860500</td>
+                  <td>Kemuhammadiyahan</td>
+                  <td>Fharkhan Luthfi, S.Kom.I., M.Sos.</td>
+                  <td>4.1.4.31</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>08:45-10:25 WIB</td>
+                  <td>211870120</td>
+                  <td>Bahasa Inggris Profesional</td>
+                  <td>
+                    <ul>
+                      <li>Dwi Nita Febriyanti, S.Pd.,M.Hum</li>
+                      <li>R MUHAMMAD ALI, S.S., M.Pd.</li>
+                    </ul>
+                  </td>
+                  <td>Daring ( T. Informatika )</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>13:30-15:00 WIB</td>
+                  <td></td>
+                  <td>praktikum Pemrograman Mobile</td>
+                  <td>Dinan Yulianto, S.T., M.Eng.</td>
+                  <td>jaringan</td>
+                  <td></td>
+                </tr>
+                <tr class="asisten">
+                  <td>15:00-16:30 WIB</td>
+                  <td></td>
+                  <td>asisten Pemrograman Berbasis Objek</td>
+                  <td></td>
+                  <td>Multimedia</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h2 id="semester6">semester 6</h2>
+          <div class="table-responsive">
+            <table class="table caption-top">
+              <caption>
+                Matkul
+              </caption>
+              <thead>
+                <tr class="header">
+                  <th scope="col">HARI</th>
+                  <th scope="col">JAM</th>
+                  <th scope="col">KODE</th>
+                  <th scope="col">MATA KULIAH/PRAKTIKUM</th>
+                  <th scope="col">Dosen</th>
+                  <th scope="col">KELAS/LAB</th>
+                  <th>SKS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Senin</td>
+                  <td>12:30-15:05 WIB</td>
+                  <td>211860330</td>
+                  <td>Rekayasa Perangkat Lunak</td>
+                  <td>Dr., Ardiansyah, S.T., M.Cs.</td>
+                  <td>4.1.5.67</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">Selasa</td>
+                  <td>08:45-10:25 WIB</td>
+                  <td>211860120</td>
+                  <td>Manajemen Proyek Teknologi Informasi</td>
+                  <td>Nur Rochmah Dyah PA, S.T., M.Kom.</td>
+                  <td>Daring ( T. Informatika )</td>
+                  <td>2</td>
+                </tr>
+                <tr class="asisten">
+                  <td>10:00-11:30 WIB</td>
+                  <td></td>
+                  <td>asisten pemrograman web</td>
+                  <td></td>
+                  <td>Jaringan</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>13:45-15:15 WIB</td>
+                  <td></td>
+                  <td>praktikum Teknologi Multimedia</td>
+                  <td>Ir. Ika Arfiani, S.T., M.Cs.</td>
+                  <td>Jaringan</td>
+                  <td></td>
+                </tr>
+                <tr class="asisten">
+                  <td rowspan="2">Rabu</td>
+                  <td>08:30-10:00 WIB</td>
+                  <td></td>
+                  <td>asisten pemrograman web</td>
+                  <td></td>
+                  <td>Jaringan</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>15:15-16:45 WIB</td>
+                  <td></td>
+                  <td>praktikum Rekayasa Web</td>
+                  <td>Dinan Yulianto, S.T., M.Eng.</td>
+                  <td>Basis Data</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td rowspan="3">Kamis</td>
+                  <td>10:30-12.10 WIB</td>
+                  <td>211860931</td>
+                  <td>Sistem terdistribusi</td>
+                  <td>Mushlihudin, S.T., M.T.</td>
+                  <td>Daring ( T. Informatika )</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>12:15-13:45 WIB</td>
+                  <td></td>
+                  <td>praktikum Keamanan Informasi</td>
+                  <td>Prof. Dr. Ir. Imam Riadi, M.Kom</td>
+                  <td>Basis Data</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>13:45-15:15 WIB</td>
+                  <td></td>
+                  <td>praktikum Sistem Terdistribusi</td>
+                  <td>Mushlihuddin, S.T., M.T</td>
+                  <td>Basis Data</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td rowspan="3">Jumat</td>
+                  <td>07:00-08:40 WIB</td>
+                  <td>211860220</td>
+                  <td>Metodologi Penelitian</td>
+                  <td>Dr., Ardiansyah, S.T., M.Cs.</td>
+                  <td>Daring ( T. Informatika )</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>08:45-10:25 WIB</td>
+                  <td>211860531</td>
+                  <td>Keamanan Informasi</td>
+                  <td>Prof. Dr. Ir., H. Imam Riadi, M.Kom.</td>
+                  <td>Daring ( T. Informatika )</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>12:30-14:10 WIB</td>
+                  <td>211860431</td>
+                  <td>Teknologi Multimedia</td>
+                  <td>Dinan Yulianto, S.T., M.Eng.</td>
+                  <td>Daring ( T. Informatika )</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>Sabtu</td>
+                  <td>14:15-16:05 WIB</td>
+                  <td>211860731</td>
+                  <td>Rekayasa Web</td>
+                  <td>Supriyanto, S.T., M.T.</td>
+                  <td>4.1.5.55</td>
+                  <td>3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h2 id="semester7">semester 7</h2>
+          <div class="table-responsive">
+            <table class="table caption-top">
+              <caption>
+                Matkul
+              </caption>
+              <thead>
+                <tr class="header">
+                  <th scope="col">HARI</th>
+                  <th scope="col">JAM</th>
+                  <th scope="col">KODE</th>
+                  <th scope="col">MATA KULIAH/PRAKTIKUM</th>
+                  <th scope="col">Dosen</th>
+                  <th scope="col">KELAS/LAB</th>
+                  <th>SKS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Selasa</td>
+                  <td>10:30-12:10 WIB</td>
+                  <td>211870630</td>
+                  <td>Praktek Magang</td>
+                  <td>Murein Miksa Mardhia, S.T., M.T.</td>
+                  <td>Daring ( T. Informatika )</td>
+                  <td>3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-3 jam-waktu">
+          <div class="jam pt-1 sticky-top">
+            <div class="bungkus-2">
+              <div class="bungkus tanggal">
+                <div class="date">senin, 1 januari 2020</div>
+              </div>
+              <div class="bungkus">
+                <div class="clock" timezone="+7">00:00:00</div>
+                <div class="timezone">WIB</div>
+              </div>
+              <div class="bungkus">
+                <div class="clock" timezone="+8">00:00:00</div>
+                <div class="timezone">WITA</div>
+              </div>
+              <div class="bungkus">
+                <div class="clock" timezone="+9">00:00:00</div>
+                <div class="timezone">WIT</div>
+              </div>
+            </div>
+            <div id="clock">
+              <input
+                onchange="setAlarmTime(this.value)"
+                name="alarmTime"
+                type="datetime-local"
+              />
+              <div class="controls">
+                <!-- <button onclick="setAlarm()" class="button set-alarm">Set alarm</button> -->
+                <button class="button set-alarm">Set alarm</button>
+                <!-- <button onclick="clearAlarm()" class="button clear-alarm">Clear alarm</button> -->
+                <button class="button clear-alarm">Clear alarm</button>
+              </div>
+            </div>
+            <small
+              >NOTE! : waktu untuk alarm adalah waktu lokal di komputer
+              kalian</small
+            >
+          </div>
+        </div>
+      </div>
+    </div>
 
-	<script src="js-css/js/bootstrap.bundle.min.js"></script>
-	<script src="js-css/script.js"></script>
-</body>
-
+    <script src="js-css/js/bootstrap.bundle.min.js"></script>
+    <script src="js-css/script.js"></script>
+  </body>
 </html>
